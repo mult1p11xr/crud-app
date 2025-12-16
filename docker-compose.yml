@@ -1,0 +1,38 @@
+name: u03-filip
+
+services:
+  php:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      ports:
+        - 80:80
+      volumes:
+        - ./src:/var/www/html/
+
+
+  #mariadb:
+      #image: mariadb:latest
+      #container_name: mariadb
+      #restart: always
+      #enviroment:
+        #MYSQL_USER: mariadb
+        #MYSQL_PASSWORD: mariadb
+        #MYSQL_DATABASE: u03-filip
+        #ARIADB_ROOT_PASSWORD.: u03-filip
+     # ports:
+        #- 3306:3306
+      #volumes:
+        #- mariadb_data:/var/lib/mysql
+
+  #adminer:
+        #image: adminer:latest
+        #container_name: adminer_u03
+        #restart: always
+       # #ports:
+         # - 8080:8080
+
+#volumes:
+  #mariadb_data:
+
+##
