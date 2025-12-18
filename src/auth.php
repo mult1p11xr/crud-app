@@ -44,9 +44,9 @@ function register($name, $email, $password) {
 }
 
 if (isset($_POST['auth']) && $_POST['auth'] == "login") {
-    login $_POST['email']) && $_POST['password']);
+    login $_POST['email'], $_POST['password']);
 } else if (isset($_POST['auth']) && $_POST['auth'] == "register") {
-    register($_POST['name']) && $_POST['email'], $_POST['password']);
+    register($_POST['name'], $_POST['email'], $_POST['password']);
 } else {
      header ('Location: http://localhost/index.php');
 }
